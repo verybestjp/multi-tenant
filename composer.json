@@ -10,6 +10,7 @@
         "hyn"
     ],
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Daniël Klabbers",
