@@ -9,6 +9,7 @@
         "saas",
         "hyn"
     ],
+    "minimum-stability": "dev",
     "license": "MIT",
     "authors": [
         {
