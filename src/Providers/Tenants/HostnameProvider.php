@@ -23,6 +23,16 @@ use Illuminate\Contracts\Support\DeferrableProvider;
 
 class HostnameProvider extends ServiceProvider implements DeferrableProvider
 {
+    public function register()
+    {
+        $empty = function () {
+            return null;
+        };
+
+        $this->app->singleton(CurrentHostname::class, $empty);
+        $this->app->singleton(Tenant::class, $empty);
+    }
+
     public function provides()
     {
         return [
